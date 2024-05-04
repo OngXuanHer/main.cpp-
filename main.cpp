@@ -8,4 +8,4 @@ type name = value;
   secs_per_min = 60
   print(secs_per_min)
   value = mins_per_hour
-  mins_per_hour = 60
+  mins_per_hour = 60 
