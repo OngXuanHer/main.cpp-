@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string input;
+
+    cout << "7 1:-7 1 ";
+    cin >> input;
+
+    // Check if the input contains a decimal point
+    size_t pos = input.find('.');
+
+    // If there is no decimal point, or if the decimal point is at the end of the string (indicating a trailing zero), print true
+    if (pos == string::npos || pos == input.length() - 1) {
+        cout << "true (1)" << endl;
+    } else {
+        // If there is a decimal point and it is not at the end of the string, print false
+        cout << "false (0)" << endl;
+    }
+
+    return 0;
+}
